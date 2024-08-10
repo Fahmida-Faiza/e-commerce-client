@@ -1,0 +1,72 @@
+[
+    {   
+    "id": 1,    
+    "title": "Product A",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product A.",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "title": "Product B",
+        "image": "https://i.ibb.co/LC4Xpxb/bike.jpg",
+        "description": "This is a description for Product B.",
+        "price": 29.99
+    },
+    {
+        "id": 3,
+        "title": "Product C",
+        "image": "https://example.com/productC.webp",
+        "description": "This is a description for Product C.",
+        "price": 39.99
+    },
+    {
+        "id": 4,
+        "title": "Product D",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product D.",
+        "price": 49.99
+    },
+    {
+        "id": 5,
+        "title": "Product E",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product E.",
+        "price": 59.99
+    },
+    {
+        "id": 6,
+        "title": "Product F",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product F.",
+        "price": 69.99
+    },
+    {
+        "id": 7,
+        "title": "Product G",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product G.",
+        "price": 79.99
+    },
+    {
+        "id": 8,
+        "title": "Product H",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product H.",
+        "price": 89.99
+    },
+    {
+        "id": 9,
+        "title": "Product I",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product I.",
+        "price": 99.99
+    },
+    {
+        "id": 10,
+        "title": "Product J",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "description": "This is a description for Product J.",
+        "price": 119.99
+    }
+]
