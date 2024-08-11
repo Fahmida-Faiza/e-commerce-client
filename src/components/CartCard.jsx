@@ -2,7 +2,12 @@ import Swal from "sweetalert2";
 
 
 const CartCard = ({ carts, setCarts, cart }) => {
-    const { _id, cartphoto, cartname, cartquantity, carttaste } = cart;
+
+
+
+
+    const { _id, cartphoto, cartname, cartquantity, cartdetails } = cart;
+
 
     //delete
     const handleDelete = _id => {
@@ -42,6 +47,8 @@ const CartCard = ({ carts, setCarts, cart }) => {
             }
         })
     }
+
+    
     return (
         <div>
             <div className="flex gap-2 md:gap-10 lg:gap-14 justify-center m-1 border p-3">
@@ -49,8 +56,8 @@ const CartCard = ({ carts, setCarts, cart }) => {
                 <div className=" flex flex-col justify-center items-center gap-2">
                     <h2>Name: {cartname}</h2>
 
-                    <p>Quantity: {cartquantity}</p>
-                    <p>Taste: {carttaste}</p>
+                    <p>Price: {cartquantity}</p>
+                    <p>Details: {cartdetails}</p>
                     <div className="">
                         <button
                             onClick={() => handleDelete(_id)}

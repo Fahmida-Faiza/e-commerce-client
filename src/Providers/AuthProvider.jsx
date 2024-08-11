@@ -11,6 +11,10 @@ const auth = getAuth(app)
  const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+  
+
+
+    
 
     const createUser =(email,password) =>{
         setLoading(true);
@@ -40,7 +44,7 @@ const auth = getAuth(app)
             setLoading(false)
 //if user exists then issue a token
             if(currentUser){
-
+                // const loggedUser = { email: userEmail };
                 axios.post('http://localhost:5000/jwt', loggedUser, 
                 
                 {

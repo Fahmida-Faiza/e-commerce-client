@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../Providers/AuthProvider';
 
 const ServiceCard = ({ service }) => {
     const {_id,title, image, price,description} = service;
+    const {user} =  useContext(AuthContext);
 
 
 
@@ -11,10 +13,11 @@ const ServiceCard = ({ service }) => {
 
     const handleAddToCart = () => {
         const cartname = title;
+        const email = user.email;
         const cartquantity = price;
         const cartdetails = description;
         const cartphoto = image;
-        const newCart = { cartname,  cartdetails, cartquantity, cartphoto }
+        const newCart = { cartname, email,  cartdetails, cartquantity, cartphoto }
         console.log(newCart);
 
 
