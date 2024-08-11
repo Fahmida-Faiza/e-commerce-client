@@ -1,7 +1,57 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const ServiceCard = ({ service }) => {
-    const {title, image, price,description} = service;
+    const {_id,title, image, price,description} = service;
+
+
+
+    /////////////////////////////faiza cart r kaj
+
+    const handleAddToCart = () => {
+        const cartname = title;
+        const cartquantity = price;
+        const cartdetails = description;
+        const cartphoto = image;
+        const newCart = { cartname,  cartdetails, cartquantity, cartphoto }
+        console.log(newCart);
+
+
+        //send data to the server cart
+        fetch('http://localhost:5000/cart', {
+
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newCart)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Sucess!',
+                        text: 'User Added successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+
+                }
+            })
+
+
+    }
+
+
+
+    /////////////////////////////////////////////
+
+
+
+
+
     return (
         <div>
             <div className="card bg-base-100 w-96 shadow-xl">
@@ -15,7 +65,10 @@ const ServiceCard = ({ service }) => {
                     <p>{description}</p>
                     <p>price : ${price}</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Add to cart</button>
+                        {/* <Link to={`/checkout/${_id}`}> */}
+                        <Link className=''>
+                            <button onClick={handleAddToCart} className="btn btn-primary">Add to cart</button>
+                        </Link>
                     </div>
                 </div>
             </div>

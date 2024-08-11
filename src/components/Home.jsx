@@ -4,7 +4,7 @@ import Services from "./Services";
 
 const Home = () => {
     return (
-        <div>
+        <div className="my-2">
             <div>
                 <div
                     className="hero min-h-screen"
@@ -15,7 +15,9 @@ const Home = () => {
                    
                 </div>
             </div>
-            <Services></Services>
+            <div>
+                <Services></Services>
+            </div>
         </div>
     );
 };

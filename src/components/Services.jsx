@@ -6,18 +6,18 @@ const Services = () => {
     const [services, setServices] = useState([]);
     // data load r jonno useEffect
     useEffect(() => {
-        fetch('./services.json')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
     return (
-        <div>
+        <div className='my-4'>
             <div className='text-center'>
                 <h1>Services page</h1>
             </div>
 
 
-            <div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
 
 
                 {

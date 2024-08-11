@@ -16,7 +16,7 @@
     {
         "id": 3,
         "title": "Product C",
-        "image": "https://example.com/productC.webp",
+        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
         "description": "This is a description for Product C.",
         "price": 39.99
     },
@@ -37,14 +37,14 @@
     {
         "id": 6,
         "title": "Product F",
-        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "image": "https://i.ibb.co/LC4Xpxb/bike.jpg",
         "description": "This is a description for Product F.",
         "price": 69.99
     },
     {
         "id": 7,
         "title": "Product G",
-        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
+        "image": "https://i.ibb.co/LC4Xpxb/bike.jpg",
         "description": "This is a description for Product G.",
         "price": 79.99
     },
@@ -61,12 +61,6 @@
         "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
         "description": "This is a description for Product I.",
         "price": 99.99
-    },
-    {
-        "id": 10,
-        "title": "Product J",
-        "image": "https://i.ibb.co/HVybWhk/pexels-babydov-7788009.jpg",
-        "description": "This is a description for Product J.",
-        "price": 119.99
     }
+   
 ]

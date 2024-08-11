@@ -23,7 +23,7 @@ const auth = getAuth(app)
         return signInWithEmailAndPassword(auth, email,password);
     }
 
-    //signout
+    // signout  logOut
     const logOut =() =>{
         setLoading(true);
         return signOut(auth)
