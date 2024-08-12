@@ -6,7 +6,7 @@ import Home from "../components/Home";
 
 import Signup from "../../src/SignUp/Signup";
 import Cart from "../components/Cart";
-// import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/cart',
-                element: <Cart></Cart>,
+                element: <PrivateRoute><Cart></Cart></PrivateRoute>
                 // loader: () => fetch('http://localhost:5000/cart')
 
 

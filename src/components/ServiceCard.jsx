@@ -13,7 +13,9 @@ const ServiceCard = ({ service }) => {
 
     const handleAddToCart = () => {
         const cartname = title;
+        
         const email = user.email;
+
         const cartquantity = price;
         const cartdetails = description;
         const cartphoto = image;
